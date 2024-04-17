@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://wallpaperboat.com/wp-content/uploads/2021/12/20/79953/lofi-girl-07.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container {
+    display: block;
+    margin: auto;
+    width: 30%;
+    margin-top: 10%;
+    height: fit-content;
+    padding-bottom: 5%;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+input {
+    width: 35%;
+    border-style: none;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: 3%;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10%;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+h2 {
+    padding-top: 10%;
+    padding-bottom: 7%;
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+div {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+#output {
+    margin-top: 1%;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 4%;
+    margin-top: 5%;
+    font-size: larger;
+    border-radius: 25px;
+    background-color: rgb(0, 213, 160);
+    margin-bottom: 15%;
+
+}
+
+button:active {
+    background-color: rgb(0, 167, 125);
+}
+
+@media (max-height: 900px) {
+    #container {
+        width: 70%;
+    }
+}
