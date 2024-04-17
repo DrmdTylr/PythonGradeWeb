@@ -30,6 +30,10 @@ input {
     background-color: rgb(255, 255, 255, 0.9);
 }
 
+h1 {
+    padding-top: 10%;
+}
+
 h2 {
     padding-top: 10%;
     padding-bottom: 7%;
