@@ -1,3 +1,11 @@
+fetch("./header/header.html")
+.then(response => {
+  return response.text()
+})
+.then(data => {
+  document.getElementById("myTopnav").innerHTML = data;
+});
+
 function grade_ammend() {
     input_text = parseInt(document.getElementById("grade").value)
     outOf=100
@@ -73,11 +81,34 @@ function radio(id) {
     grade(newid)
 }
 
+function newSubject() {
+    for (let i = 1; i < 10; i++) {
+        if (document.getElementById("holder_opt" + i) === null) {
+            console.log(document.getElementById("opt" + i))
+            optionnum = i
+            break
+        }
+        if (document.getElementById("holder_opt9") != null) {
+            alert("Cannot add more subjects")
+            return
+        }
+        
+    }
 
-fetch("./header/header.html")
-.then(response => {
-  return response.text()
-})
-.then(data => {
-  document.getElementById("myTopnav").innerHTML = data;
-});
+    container = document.getElementById("container")
+    var el = document.createElement("div");
+    el.className = "gradiv col-md-2 col-sm-4";
+    container.appendChild(el)
+
+    var elh1 = document.createElement("h1")
+    elh1.textContent = "Opt " + optionnum
+    el.appendChild(elh1)
+
+    var elholder = document.createElement("div")
+    elholder.className = "row holder"
+    elholder.id = "holder_opt" + optionnum
+    el.appendChild(elholder)
+
+    
+}
+

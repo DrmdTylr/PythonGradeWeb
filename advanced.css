@@ -8,6 +8,7 @@ body {
 
 #container {
     margin-top: 10%;
+    position: relative;
     height: fit-content;
     padding-bottom: 5%;
     background-color: rgb(255, 255, 255, 0.9);
@@ -17,7 +18,7 @@ body {
 }
 
 .gradiv {
-    height: 250px;
+    height: 290px;
     padding: 2%;
 }
 
@@ -66,6 +67,32 @@ h1 {
 .h1form {
     text-align: center;
     color: #f2f2f2;
+}
+
+#plusholder {
+    position: absolute;
+    right: 0;
+    width: 7.5%;
+}
+
+#facircle {
+    margin-top: 140px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    padding: 2px;
+}
+
+button {
+    border-style: none;
+    background-color: rgb(255, 255, 255, 0);
+    padding: 0;
+}
+
+i {
+    font-size: 30px;
 }
 
 @media (max-width: 575px) {
