@@ -13,7 +13,7 @@ function grade_ammend() {
         output1_div.textContent = ""
     }
     else {
-        marks = totalmarks * (totalGrade/100)
+        marks = totalmarks * (input_text/100)
         output1_div = document.getElementById("output1")
         output1_div.textContent = "Total marks: " + Math.round(marks)
     }
