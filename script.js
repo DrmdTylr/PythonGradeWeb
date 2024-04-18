@@ -32,6 +32,46 @@ function showInput() {
     }
 }
 
+const hlvl = ["H1", "H2", "H3", "H4", "H5", "H6", "H7", "H8"]
+const olvl = ["O1", "O2", "O3", "O4", "O5", "O6", "O7", "O8"]
+const perc = [90, 80, 70, 60, 50, 40, 30, 0]
+
+
+function grade(id) {
+    hgrade = document.getElementById(id).value
+    if (document.getElementById("h_" + id).checked == true) {
+        for (let i = 0; i < 8; i++) {
+            if (hgrade > perc[i]) {
+                document.getElementById(id + "h").textContent = hlvl[i]
+                break
+            }
+        }
+    }
+    else if (document.getElementById("o_" + id).checked == true) {
+        for (let i = 0; i < 8; i++) {
+            if (hgrade > perc[i]) {
+                document.getElementById(id + "h").textContent = olvl[i]
+                break
+            }
+        }
+    }
+}
+
+function radio(id) {
+    const idArr = id.split("_")
+    newid = idArr[1]
+
+    if (document.getElementById(id).checked == true) {
+        if (id === "h_" + newid) {
+            document.getElementById("holder_" + newid).style.backgroundColor = "rgb(253, 85, 85)"
+        }
+        else if (id === "o_" + newid) {
+            document.getElementById("holder_" + newid).style.backgroundColor = "rgb(85, 141, 253)"
+        }
+    }
+    
+    grade(newid)
+}
 
 
 fetch("./header/header.html")

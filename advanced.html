@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="advanced.css">
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20220625/ourmid/pngtree-study-icon-design-vector-png-image_5337841.png">
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div id="container" class="row col-6">
+                <div class="gradiv col-2">
+                    <h1>English</h1>
+                    <div id="holder_eng" class="row holder">
+                        <div class="inpform col-12">
+                            <input onchange="grade(this.id)" id="eng" type="number" min="0" max="100" value="50" class="grade">
+                        </div>
+                        <div class="h1form col-12">
+                            <h2 id="engh">H6</h2>
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" checked="checked" type="radio" id="h_eng" name="eng">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" type="radio" id="o_eng" name="eng">
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradiv col-2">
+                    <h1>Maths</h1>
+                    <div id="holder_mat" class="row holder">
+                        <div class="inpform col-12">
+                            <input onchange="grade(this.id)" id="mat" type="number" min="0" max="100" value="50" class="grade">
+                        </div>
+                        <div class="h1form col-12">
+                            <h2 id="math">H6</h2>
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" checked="checked" type="radio" id="h_mat" name="mat">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" type="radio" id="o_mat" name="mat">
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradiv col-2">
+                    <h1>Irish</h1>
+                    <div id="holder_iri" class="row holder">
+                        <div class="inpform col-12">
+                            <input onchange="grade(this.id)" id="iri" type="number" min="0" max="100" value="50" class="grade">
+                        </div>
+                        <div class="h1form col-12">
+                            <h2 id="irih">H6</h2>
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" checked="checked" type="radio" id="h_iri" name="iri">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" type="radio" id="o_iri" name="iri">
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradiv col-2">
+                    <h1>Option 1</h1>
+                    <div id="holder_opt1" class="row holder">
+                        <div class="inpform col-12">
+                            <input onchange="grade(this.id)" id="opt1" type="number" min="0" max="100" value="50" class="grade">
+                        </div>
+                        <div class="h1form col-12">
+                            <h2 id="opt1h">H6</h2>
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" checked="checked" type="radio" id="h_opt1" name="opt1">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" type="radio" id="o_opt1" name="opt1">
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradiv col-2">
+                    <h1>Option 2</h1>
+                    <div id="holder_opt2" class="row holder">
+                        <div class="inpform col-12">
+                            <input onchange="grade(this.id)" id="opt2" type="number" min="0" max="100" value="50" class="grade">
+                        </div>
+                        <div class="h1form col-12">
+                            <h2 id="opt2h">H6</h2>
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" checked="checked" type="radio" id="h_opt2" name="opt2">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" type="radio" id="o_opt2" name="opt2">
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="gradiv col-2">
+                    <h1>Option 3</h1>
+                    <div id="holder_opt3" class="row holder">
+                        <div class="inpform col-12">
+                            <input onchange="grade(this.id)" id="opt3" type="number" min="0" max="100" value="50" class="grade">
+                        </div>
+                        <div class="h1form col-12">
+                            <h2 id="opt3h">H6</h2>
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" checked="checked" type="radio" id="h_opt3" name="opt3">
+                        </div>
+                        <div class="circform col-2">
+                            <input class="check" onchange="radio(this.id)" type="radio" id="o_opt3" name="opt3">
+                        </div>
+                        <div class="circform col-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
