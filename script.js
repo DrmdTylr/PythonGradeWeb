@@ -7,9 +7,10 @@ function grade_ammend() {
     output_div = document.getElementById("output")
     output_div.textContent = Math.round((totalGrade/outOf)*100)
 
-    totalmarks = parseInt(document.getElementById("total").value)
-    if (totalmarks == null) {
-        return
+    totalmarks = document.getElementById("total").value
+    if (totalmarks == 0) {
+        output1_div = document.getElementById("output1")
+        output1_div.textContent = ""
     }
     else {
         marks = totalmarks * (totalGrade/100)
