@@ -56,7 +56,7 @@ button {
     display: block;
     margin: auto;
     width: 50%;
-    height: 9%;
+    height: fit-content;
     margin-top: 5%;
     font-size: larger;
     border-radius: 25px;
