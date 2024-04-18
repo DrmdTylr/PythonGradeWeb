@@ -1,17 +1,30 @@
 <html>
   <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://png.pngtree.com/png-vector/20220625/ourmid/pngtree-study-icon-design-vector-png-image_5337841.png">
   </head>
   <body>
-    <div id="container">
-        <h1>Grade Adjuster</h1>
-        <h2>Enter grade:</h2>
-        <input type="number" min="0" max="100" id="grade">
-        <button onclick="grade_ammend()">Adjust Grade</button>
-        <div>Adjusted Grade</div>
-        <div id="output"></div>
+    <div class="container-fluid">
+        <div id="container" class="row">
+          <div class="col-12">
+            <h1>Grade Adjuster</h1>
+            <h2>Enter grade:</h2>
+            <input type="number" min="0" max="100" id="grade">
+            <button onclick="grade_ammend()">Adjust Grade</button>
+            <div>Adjusted Grade</div>
+            <div id="output"></div>
+          </div>
+          <!-- <div class="col-3">
+            <h1>New Grades</h1>
+            <ul>
+              <li></li>
+            </ul>
+          </div> -->
+        </div>
     </div>
+
     <script src="script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
