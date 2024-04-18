@@ -2,9 +2,13 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header/header.css">
     <link rel="icon" href="https://png.pngtree.com/png-vector/20220625/ourmid/pngtree-study-icon-design-vector-png-image_5337841.png">
   </head>
   <body>
+    <div class="topnav" id="myTopnav">
+    </div>
+
     <div class="container-fluid">
       <div class="row">
         <div class="col-3">
@@ -14,9 +18,13 @@
             <h1>Grade Adjuster</h1>
             <h2>Enter grade:</h2>
             <input type="number" min="0" max="100" id="grade">
+            <h2 id="h2total">Show total marks</h2><input onclick="showInput()" id="check" type="checkbox">
+            <h2 id="h2mark">Enter total marks:</h2>
+            <input type="number" min="1" id="total">
             <button onclick="grade_ammend()">Adjust Grade</button>
             <div>Adjusted Grade</div>
             <div id="output"></div>
+            <div id="output1"></div>
           </div>
           <div id="div2" class="col-md-4">
             <h1 id="gradh1">New Grades</h1>
