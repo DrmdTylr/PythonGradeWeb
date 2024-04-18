@@ -6,8 +6,11 @@
   </head>
   <body>
     <div class="container-fluid">
-        <div id="container" class="row">
-          <div class="col-12">
+      <div class="row">
+        <div class="col-3">
+        </div>
+        <div id="container" class="row col-6">
+          <div class="col-md-8">
             <h1>Grade Adjuster</h1>
             <h2>Enter grade:</h2>
             <input type="number" min="0" max="100" id="grade">
@@ -15,13 +18,22 @@
             <div>Adjusted Grade</div>
             <div id="output"></div>
           </div>
-          <!-- <div class="col-4">
-            <h1>New Grades</h1>
+          <div id="div2" class="col-md-4">
+            <h1 id="gradh1">New Grades</h1>
             <ul>
-              <li></li>
+              <li>H1 = 84%</li>
+              <li>H2 = 73%</li>
+              <li>H3 = 62%</li>
+              <li>H4 = 51%</li>
+              <li>H5 = 40%</li>
+              <li>H6 = 30%</li>
+              <li>H7 = 19%</li>
             </ul>
-          </div> -->
+          </div>
         </div>
+        <div class="col-3">
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
