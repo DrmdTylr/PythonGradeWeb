@@ -45,6 +45,7 @@ input {
 }
 
 #check {
+    height: 4%;
     width: 10%;
     display: inline;
 }
